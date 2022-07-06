@@ -1,0 +1,13 @@
+<article class="book-item">
+	<h2 class="book__name"><%=book.title%></h2>
+	<p class="book__author"><%=book.author.name%></p>
+	<p class="book__content"><%=book.summary%></p>
+	<div class="book-actions">
+		<form id="delete-form" action="/All-book/<%=book._id%>/delete" method="POST">
+
+			<button class="btn btn-alt">Delete book</button>
+		</form>
+		<a href="/All-book/<%=book._id%>/edit" class="  edit-book">Edit</a>
+		<a href="/All-book/<%=book._id%>" class=" view-book">View</a>
+	</div>
+	</article>
